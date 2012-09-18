@@ -5,39 +5,62 @@ A really simple wrapper for JSON parsers/mappers/serializers so you can test the
 
 Some comparative results for 1000 objects:
 
-## Java ##
+# Java #
 
-Versions: **gson 1.7.1** *vs.* **jackson 1.9.9**
+## Versions: gson 1.7.1 vs. jackson 1.9.9 ## 
 
-* gson - Array to JSON time: **169 ms**
-  
-  jackson - Array to JSON time: **56 ms**
+### Array to JSON ###
 
-* gson - List to JSON time: **98 ms**
-  
-  jackson - List to JSON time: **28 ms**
+* gson **169 ms**
+ 
+  jackson **56 ms**
+
+### List to JSON ###
+
+* gson **98 ms**
+ 
+  jackson **28 ms**
+
+### JSON to List ###
+
+* gson **102 ms**
+ 
+  jackson **76 ms**
+
+## Versions: gson 2.2.2 vs. jackson 2.0.6 ##
+
+### Array to JSON ### 
+
+* gson **62 ms**
+
+  jackson **63 ms**
+
+The mean of 1000 attempts of Array to Json Gson is: **2.057** with a *standard deviation* of: **1.3091031280995402**
+
+The mean of 1000 attempts of Array to Json Jackson is: **0.563** with a *standard deviation* of: **1.0315187831542376**
+
+### List to JSON ###
+
+* gson **32 ms**
+
+  jackson **26 ms**
+
+The mean of 1000 attempts of List to Json Gson is: **1.695** with a *standard deviation* of: **0.5310131825105666**
+
+The mean of 1000 attempts of List to Json Jackson is: **0.497** with a *standard deviation* of: **0.531028247836214**
+
+### JSON to List ###
+
+* gson **43 ms**
+
+  jackson **60 ms**
+
+The mean of 1000 attempts of Json to List Gson is: **1.177** with a *standard deviation* of: **0.8542078201468292**
+
+The mean of 1000 attempts of Json to List Jackson is: **0.864** with a *standard deviation* of: **1.2733828960685771**
 
 
-* gson - JSON to List time: **102 ms**
-  
-  jackson - JSON to List time: **76 ms**
-
-Versions: **gson 2.2.2** *vs.* **jackson 2.0.6**
-
-* gson - Array to JSON time: **62 ms**
-
-  jackson - Array to JSON time: **63 ms**
-
-* gson - List to JSON time: **32 ms**
-
-  jackson - List to json time: **26 ms**
-
-
-* gson - JSON to List time: **43 ms**
-
-  jackson - JSON to List time: **60 ms**
-
-## Android ##
+# Android #
 
 ### Todo ###
 
