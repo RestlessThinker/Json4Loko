@@ -50,8 +50,6 @@ public class JacksonAdapterTest {
 	assertNotNull( json );
 	assertTrue( json.length() > 2 );
 	assertEquals( expectedJson, json );
-
-	System.out.println( json );
     }
 
 
