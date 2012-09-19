@@ -66,9 +66,9 @@ The mean of 1000 attempts of Json to List Jackson is: **0.864** with a *standard
 
 ### Array to JSON ###
 
-* gson **4970 ms **
+* gson **4970 ms**
 
-  jackson **2187 ms **
+  jackson **2187 ms**
 
 The mean of 1000 attempts of Array to Json Gson is: **190.144** with a *standard deviation* of: **28.01533979804635**
 
@@ -96,4 +96,6 @@ The mean of 1000 attempts of Json to List Gson is: **127.407** with a *standard 
 
 The mean of 1000 attempts of Json to List Jackson is: **142.809** with a *standard deviation* of: **25.109012704604687**
 
+
+Android tests done on a Nexus One.
 
